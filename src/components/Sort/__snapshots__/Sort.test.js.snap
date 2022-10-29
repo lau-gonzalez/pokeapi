@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sort/> renders the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sort-container"
+  >
+    <div
+      class="form-floating"
+    >
+      <select
+        class="form-select"
+        id="sortBySelect"
+      >
+        <option
+          value="id"
+        >
+          Number
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+      </select>
+      <label>
+        Sort By
+      </label>
+    </div>
+    <div
+      class="form-floating"
+    >
+      <select
+        class="form-select"
+        id="orderSelect"
+      >
+        <option
+          value="ascendant"
+        >
+          Ascendant
+        </option>
+        <option
+          value="descendant"
+        >
+          Descendant
+        </option>
+      </select>
+      <label>
+        Order
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;

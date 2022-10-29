@@ -1,0 +1,9 @@
+.sort-container {
+  display: flex;
+  gap: 20px;
+}
+
+.selector-container {
+  display: flex;
+  width: 200px;
+}
