@@ -34,14 +34,11 @@ const Card = ({ data }) => {
         <Image className="rounded-circle picture" src={image} alt={name} />
         <h4>{name}</h4>
         <div className="mb-1">
-          <span>
-            Height:
-            {height}0 cm.
-          </span>
-          <span>Weight:{weight} kg.</span>
+          <span>Height: {height}0 cm.</span>
+          <span>Weight: {weight} kg.</span>
         </div>
         <div>
-          <span>Type:{label}</span>
+          <span>Type: {label}</span>
         </div>
         <Button variant="dark" onClick={toggleShow} className="mt-3">
           View Details
