@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useCallback } from "react";
 import { useContext } from "react";
+import Spinner from "react-bootstrap/Spinner";
 import { DataContext } from "../../hooks/useDataContext";
 import { filterData, sortCards } from "../../utils";
 import Card from "../Card";
@@ -35,9 +36,11 @@ const Pokedex = ({ searchValue }) => {
     <div className="container wrapper">
       <Sort sortCards={handleSortCards} />
       <div className="cards-container">
-        {pokemonList.map((pokemon) => (
-          <Card key={pokemon.id} data={pokemon} />
-        ))}
+        {pokemonList.length ? (
+          pokemonList.map((pokemon) => <Card key={pokemon.id} data={pokemon} />)
+        ) : (
+          <Spinner animation="border" />
+        )}
       </div>
     </div>
   );

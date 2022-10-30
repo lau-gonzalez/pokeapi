@@ -6,6 +6,7 @@ const Search = ({ setValue, placeholder }) => {
     <div className="input-group" style={{ width: 250 }}>
       <input
         type="text"
+        id="search-input"
         className="form-control"
         placeholder={placeholder}
         onChange={handleChange}
